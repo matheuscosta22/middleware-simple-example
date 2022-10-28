@@ -19,9 +19,9 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if (!Auth::user()->is_admin){
-            return response('Unauthorized', Response::HTTP_UNAUTHORIZED);
-        }
-        return $next($request);
+         if (!Auth::user()->is_admin){
+             return response('Unauthorized', Response::HTTP_UNAUTHORIZED);
+         }
+         return $next($request);
     }
 }

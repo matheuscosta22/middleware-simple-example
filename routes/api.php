@@ -13,4 +13,5 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::post('/users', [UserController::class, 'store'])->middleware('is_admin');
+Route::post('/users', [UserController::class, 'store'])
+    ->middleware('is_admin');

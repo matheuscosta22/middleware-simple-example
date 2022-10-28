@@ -13,7 +13,7 @@ class UserControllerTest extends TestCase
 
     public function test_create_user_method()
     {
-        /** @var User $user */
+         /** @var User $user */
         $user = User::factory()->create(['is_admin' => true]);
 
         $response = $this->actingAs($user)
@@ -29,7 +29,7 @@ class UserControllerTest extends TestCase
 
     public function test_create_user_method_with_not_admin()
     {
-        /** @var User $user */
+         /** @var User $user */
         $user = User::factory()->create(['is_admin' => false]);
 
         $response = $this->actingAs($user)

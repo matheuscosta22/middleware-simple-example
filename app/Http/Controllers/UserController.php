@@ -10,9 +10,9 @@ class UserController extends Controller
 {
     public function store(Request $request): JsonResponse
     {
-        $user = new User();
-        $user->fill($request->all());
-        $user->save();
-        return response()->json($user);
+         $user = new User();
+         $user->fill($request->all());
+         $user->save();
+         return response()->json($user);
     }
 }
